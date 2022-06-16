@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><script>import sys
+
+sys.path.insert(0, r&quot;C:\Development\Ark\Python\Packages\ArkNuke\ArkNuke\views&quot;)
+sys.path.insert(0, r&quot;C:\Development\Ark\Python\Packages\ArkNuke\ArkNuke&quot;)
+import LayerView
+reload(LayerView)
+import AutoLayerSubmit_ui
+reload(AutoLayerSubmit_ui)
+
+text = '3-7,9'
+
+def get_number_from_string(data):
+    
+    lines = data.split(' ')
+    numbers = []
+    i = 0
+    for line in lines:
+        if line == '':
+            continue
+        elif '-' in line:
+            t = line.split('-')
+            numbers += range(int(t[0]), int(t[1]) + 1)
+        else:
+            numbers.append(int(line))
+    print(numbers)
+
+get_number_from_string(text)
+
+def test():
+    return True if 5&lt;9 or 3&gt;5 else False
+
+print test()
+
+
+import subprocess
+
+def explore_this():
+    node = [node for node in nuke.selectedNodes() if node.Class() in ('Read', 'Write')]
+    if not node:
+        try:
+            directory = os.path.dirname(nuke.root()['name'].value())
+            directory = os.path.realpath(directory)
+            open_explorer(directory)
+        except Exception:
+            return
+    file_path = node[0]['file'].getEvaluatedValue()
+    directory = os.path.dirname(file_path)
+    directory = os.path.realpath(directory)
+    if os.path.exists(directory):
+        open_explorer(directory)
+
+def open_explorer(path):
+    print path
+    subprocess.Popen(r'explorer {}'.format(path))
+
+explore_this()
+</script>

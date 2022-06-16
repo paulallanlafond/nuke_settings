@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="1919" y="-119" w="1920" h="1177" maximized="1" screen="1">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="738" stretch="1"/>
+            <splitter orientation="2">
+                <split size="664"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="468"/>
+                <dock id="" activePageId="DAG.1">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                    <page id="DAG.2"/>
+                </dock>
+            </splitter>
+            <split size="706"/>
+            <dock id="" activePageId="com.3ds.3DExcite.LayerViewPanel" focus="true">
+                <page id="Properties.1"/>
+                <page id="com.3ds.3DExcite.AssetViewPanel"/>
+                <page id="com.3ds.3DExcite.LayerViewPanel"/>
+                <page id="com.3ds.3DExcite.ConfigViewPanel"/>
+            </dock>
+            <split size="424"/>
+            <dock id="" activePageId="uk.co.thefoundry.scripteditor.1">
+                <page id="uk.co.thefoundry.scripteditor.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>

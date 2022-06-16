@@ -1,0 +1,13 @@
+Preferences {
+ inputs 0
+ name Preferences
+ selectedGPUDeviceName "GRID T4-8Q"
+ platformPathRemaps ""
+ Script_command_default false
+ maxPanels 2
+ expression_arrows false
+ link_knob_arrows false
+ clone_arrows false
+ echoAllCommands true
+ defaultFlipbook "Flipbook Viewer"
+}

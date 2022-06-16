@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="4073" y="-99" w="1657" h="1112" screen="2">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1613" stretch="1"/>
+            <splitter orientation="2">
+                <split size="575"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="492"/>
+                <dock id="" activePageId="uk.co.thefoundry.scripteditor.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                    <page id="uk.co.thefoundry.scripteditor.1"/>
+                </dock>
+            </splitter>
+        </splitter>
+    </window>
+    <window x="1927" y="-111" w="1920" h="1200" fullscreen="1" screen="1">
+        <splitter orientation="2">
+            <split size="915"/>
+            <splitter orientation="1">
+                <split size="904"/>
+                <dock id="" activePageId="com.3ds.3DExcite.AssetViewPanel">
+                    <page id="com.3ds.3DExcite.PartViewPanel"/>
+                    <page id="com.3ds.3DExcite.AvailViewPanel"/>
+                    <page id="com.3ds.3DExcite.TrimViewPanel"/>
+                    <page id="com.3ds.3DExcite.LayerViewPanel"/>
+                    <page id="com.3ds.3DExcite.ConfigMgrViewPanel"/>
+                    <page id="com.3ds.3DExcite.ConfigWizardPanel"/>
+                    <page id="com.3ds.3DExcite.AssetViewPanel"/>
+                </dock>
+                <split size="1012"/>
+                <splitter orientation="2">
+                    <split size="915"/>
+                    <dock id="" activePageId="com.3ds.3DExcite.RenderViewPanel">
+                        <page id="com.3ds.3DExcite.ConfigViewPanel"/>
+                        <page id="com.3ds.3DExcite.RenderViewPanel"/>
+                        <page id="com.3ds.3DExcite.DeliveryViewPanel"/>
+                    </dock>
+                </splitter>
+            </splitter>
+            <split size="281"/>
+            <dock id="" activePageId="com.3ds.3DExcite.StatusViewPanel">
+                <page id="com.3ds.3DExcite.StatusViewPanel"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
